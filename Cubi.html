@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubi - Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #04072c;
+            color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-container {
+            display: flex;
+            max-width: 1200px;
+            background-color: #eeeeee;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            margin-left: 320px; 
+        }
+
+        .profile-sidebar {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 30px 20px; 
+            width: 300px;
+            text-align: center;
+            position: fixed;
+            height: 100vh; 
+            top: 0;
+            left: 0;
+        }
+
+        .profile-sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .profile-sidebar p {
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: block; 
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0; 
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .download-resume {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #ff6600;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-top: 20px; 
+        }
+
+        .download-resume:hover {
+            background-color: #ff6600;
+            color: #fff;
+        }
+
+        .profile-main {
+            flex-grow: 1;
+            padding: 40px;
+        }
+
+        .profile-main h1,
+        .profile-main h2 {
+            margin-bottom: 20px;
+            color: #ff6600;
+        }
+
+        .profile-main p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            color: #ff6600;
+        }
+
+        .service p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-sidebar">
+            <img src="CubiImage.jpeg" alt="">
+            <h2>Nazareno Cubi</h2>
+            <p>Disignig  And Creating Software</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
+            <div class="contact-info">
+                <p>Phone: 09384620370</p>
+                <p>Email: cubi.nazareno12@gmail.com</p>
+                <p>Location: Cavite, Trece Martires</p>
+                <a href="" class="download-resume">Download Resume</a>
+            </div>
+        </div>
+        <div class="profile-main">
+            <h1>ABOUT ME</h1>
+            <p>Hello! I'm Nazareno Cubi and this is my portfolio. I'm passionate about software developer with eager to make my mark in the world of technology.</p>
+            <h2>What I do!</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Software Development</h3>
+                    <p>I'm enthusiatic about learning new technologies, collaborating with peers, and building innovative solutions that make a difference. My goal is to grow as a versetile developer, mastering both front-end and back-end developmentto create impactful software applications that enhance user experiences and meet real-world needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Maintain Software Functionality</h3>
+                    <p>I monitor and troubleshoot issues, collaborate with experienced developers, and learn best practices for optimizing performance and user experience.</p>
+                </div>
+                <div class="service">
+                    <h3>Upgrade Existing Software</h3>
+                    <p>I'm eager to contribute to upgrading existing software. I assist in enhancing features, improving performance, and ensuring compatibility with new technologies.</p>
+                </div>
+                <div class="service">
+                    <h3>System Design</h3>
+                    <p>I'm diving into the realm of system design. I'm learning to analyze requirments, create architectural diagrams, and contribute to designing scalable and efficient software solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

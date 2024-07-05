@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal - Drie</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            background-image: url("abstract-digital-grid-black-background.jpg");
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 12%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            border-bottom: 2px solid rgb(255, 157, 0);
+        }
+
+        .logo {
+            font-size: 25px;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            color: rgb(229, 255, 0);
+            transform: scale(1.1);
+        }
+
+        .nav-content a {
+            font-size: 18px;
+            color: white;
+            margin: 0 20px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .nav-content a:hover,
+        .nav-content a:active {
+            color: orangered;
+            border-bottom: 3px solid orangered;
+            transform: scale(1.1);
+            border: 2px solid white;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px 25px;
+        }
+
+        .contact {
+            border: 2px solid rgb(255, 153, 0);
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.363);
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .contact:hover {
+            color: orangered;
+            transform: scale(1.1);
+        }
+
+        .content {
+            flex: 1;
+            padding: 120px 12% 50px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .box-model {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: #333;
+            border: 2px solid #ff6f61;
+            border-radius: 12px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+
+        .footer {
+            padding: 50px 30%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-top: solid orange;
+            color: white;
+            text-align: center;
+        }
+
+        .input-box input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to top, rgb(0, 0, 0), rgb(255, 255, 255), black);
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-content">
+            <a href="index.html" class="logo"><span>My</span>Website</a>
+            <a href="index.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="Skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="Gallery.html">Gallery</a>
+        </nav>
+        <a href="#contact-section" class="contact">Contact</a>
+    </header>
+
+    <div class="content">
+        
+        <div class="box-model">
+            <div class="box">
+                <h1>Laurenze</h1>
+                <h2>Web Development</h2>
+                <p>My goal is to create responsive, user-friendly websites that provide an exceptional user experience.</p>
+            </div> 
+            <div class="box">
+                <h1>Justin</h1>
+                <h2>Game Development</h2>
+                <p>My goal is to develop immersive and engaging video games that captivate players and push the boundaries of interactive entertainment.</p>
+            </div>
+            <div class="box">
+                <h1>Kent</h1>
+                <h2>Graphic Design</h2>
+                <p>My goal is to craft visually compelling designs that effectively communicate messages and resonate with audiences.</p>
+            </div>
+            <div class="box">
+                <h1>Cubi</h1>
+                <h2>Software Development</h2>
+                <p>My goal is to build robust, scalable software solutions that address complex problems and drive innovation.</p>
+            </div>
+            <div class="box">
+                <h1>Drie</h1>
+                <h2>Security Developer</h2>
+                <p>My goal is to enhance cybersecurity measures through innovative solutions and proactive strategies. I aim to contribute to creating a safer digital environment for businesses and individuals alike.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contact-section">
+        <h2 class="contact-me">Contact<span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+        </form>
+    </footer>
+</body>
+</html>

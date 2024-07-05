@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("abstract-digital-grid-black-background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;       
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 12%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            border-bottom: 2px solid rgb(255, 157, 0);
+            
+        }
+        header a {
+        text-decoration: none;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: white;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .logo:hover {
+            color: rgb(229, 255, 0);
+            transform: scale(1.1);
+        }
+
+        .nav-content a {
+            font-size: 18px;
+            color: white;
+            margin: 0 20px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease;
+        }
+
+        .nav-content a:hover,
+        .nav-content a:active {
+            color: orangered;
+            border-bottom: 3px solid orangered;
+            transform: scale(1.1);
+            border: 2px solid white;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0);
+            padding: 10px 25px;
+        }
+
+        .contact {
+            border: 2px solid rgb(255, 153, 0);
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.363);
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .contact:hover {
+            color: orangered;
+            transform: scale(1.1);
+        }
+
+        .content {
+            flex: 1;
+            padding: 100px 12% 50px;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #ff6f61;
+        }
+
+        .sub-title span {
+            color: #fff;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        .container1 {
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .heading1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .Technical-bars .bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .Technical-bars .bar i {
+            font-size: 2rem;
+            margin-right: 20px;
+        }
+
+        .Technical-bars .bar .indfo {
+            flex: 1;
+            color: #fff;
+        }
+
+        .Technical-bars .bar .progress-line {
+            position: relative;
+            width: 100%;
+            height: 8px;
+            background: #555;
+            border-radius: 4px;
+        }
+
+        .Technical-bars .bar .progress-line span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(rgb(136, 136, 136), rgb(4, 192, 255));
+            border-radius: 4px;
+            width: 0;
+        }
+
+        @keyframes fill {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--width);
+            }
+        }
+
+        footer {
+            padding: 50px 30%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-top: solid orange;
+            color: white;
+            text-align: center;
+        }
+
+        .input-box input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to top, #000, #ff6f61, #000);
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-content">
+            <a href="index.html" class="logo"><span>My</span>Website</a>
+            <a href="index.html">Portfolio</a>
+            <a href="services.html">Services</a>
+            <a href="Skills.html">Skills</a>
+            <a href="goals.html">Goals</a>
+            <a href="Gallery.html">Gallery</a>
+        </nav>
+        <a href="#contact-section" class="contact">Contact</a>
+    </header>
+
+
+    <div class="content">
+        <h1 class="sub-title">Laurenze <span>Skills</span></h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5'></i>
+                        <div class="indfo"><span>HTML</span></div>
+                        <div class="progress-line html" data-width="45%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3'></i>
+                        <div class="indfo"><span>CSS</span></div>
+                        <div class="progress-line css" data-width="40%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript'></i>
+                        <div class="indfo"><span>Javascript</span></div>
+                        <div class="progress-line javascript" data-width="30%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java'></i>
+                        <div class="indfo"><span>Java</span></div>
+                        <div class="progress-line java" data-width="60%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sub-title">Justin <span>Skills</span></h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5'></i>
+                        <div class="indfo"><span>HTML</span></div>
+                        <div class="progress-line html" data-width="70%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3'></i>
+                        <div class="indfo"><span>CSS</span></div>
+                        <div class="progress-line css" data-width="85%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript'></i>
+                        <div class="indfo"><span>Javascript</span></div>
+                        <div class="progress-line javascript" data-width="35%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java'></i>
+                        <div class="indfo"><span>Java</span></div>
+                        <div class="progress-line java" data-width="55%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sub-title">Kent <span>Skills</span></h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5'></i>
+                        <div class="indfo"><span>HTML</span></div>
+                        <div class="progress-line html" data-width="60%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3'></i>
+                        <div class="indfo"><span>CSS</span></div>
+                        <div class="progress-line css" data-width="55%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript'></i>
+                        <div class="indfo"><span>Javascript</span></div>
+                        <div class="progress-line javascript" data-width="30%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java'></i>
+                        <div class="indfo"><span>Java</span></div>
+                        <div class="progress-line java" data-width="35%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sub-title">Drie <span>Skills</span></h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5'></i>
+                        <div class="indfo"><span>HTML</span></div>
+                        <div class="progress-line html" data-width="50%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3'></i>
+                        <div class="indfo"><span>CSS</span></div>
+                        <div class="progress-line css" data-width="40%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript'></i>
+                        <div class="indfo"><span>Javascript</span></div>
+                        <div class="progress-line javascript" data-width="35%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java'></i>
+                        <div class="indfo"><span>Java</span></div>
+                        <div class="progress-line java" data-width="50%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sub-title">Cubi <span>Skills</span></h1>
+        <section>
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar">
+                        <i class='bx bxl-html5'></i>
+                        <div class="indfo"><span>HTML</span></div>
+                        <div class="progress-line html" data-width="45%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-css3'></i>
+                        <div class="indfo"><span>CSS</span></div>
+                        <div class="progress-line css" data-width="40%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-javascript'></i>
+                        <div class="indfo"><span>Javascript</span></div>
+                        <div class="progress-line javascript" data-width="35%"><span></span></div>
+                    </div>
+                    <div class="bar">
+                        <i class='bx bxl-java'></i>
+                        <div class="indfo"><span>Java</span></div>
+                        <div class="progress-line java" data-width="40%"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="contact-section">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="email" placeholder="Email">
+            </div>
+        </form>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            animateBars();
+        });
+
+        function animateBars() {
+            const bars = document.querySelectorAll('.Technical-bars .bar .progress-line span');
+
+            bars.forEach(bar => {
+                const widthPercentage = bar.parentElement.dataset.width;
+                bar.style.setProperty('--width', widthPercentage);
+                bar.style.animation = 'fill 2s forwards';
+            });
+        }
+    </script>
+</body>
+</html>
